@@ -1,0 +1,4 @@
+## finding maximum element in list
+max(listname)
+
+## Do not name a variable and functionname same in python
