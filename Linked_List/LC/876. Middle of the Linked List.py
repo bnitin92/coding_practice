@@ -23,7 +23,7 @@ class ListNode:
 def middleNode(self, head: ListNode) -> ListNode:
     fastp = head
     slowp = head
-    count = 1 # counter if count would be required
+    count = 1 # counter if count would be required for even and odd
 
     while fastp and fastp.next:
         slowp = slowp.next
