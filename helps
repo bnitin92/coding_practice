@@ -19,7 +19,7 @@ dictionaryname.get(key)
 from bisect import bisect_left
 bisect_left(array, value)
 
-or
+OR
 
 def BinarySearch(a, x):
     i = bisect_left(a, x)
@@ -27,6 +27,11 @@ def BinarySearch(a, x):
         return i
     else:
         return -1
+
+## trick of choosing between value and None
+curr.next = l1 or l2
+choose whatever is not none
+
 
 ### NUMPY
 
