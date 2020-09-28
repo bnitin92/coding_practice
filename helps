@@ -14,3 +14,24 @@ del dictionary_name[key]
 
 ## get value from dictionary
 dictionaryname.get(key)
+
+## Binary Search
+from bisect import bisect_left
+bisect_left(array, value)
+
+or
+
+def BinarySearch(a, x):
+    i = bisect_left(a, x)
+    if i != len(a) and a[i] == x:
+        return i
+    else:
+        return -1
+
+### NUMPY
+
+## finding the minimum index of the numpy array
+argmin(array)
+
+## applying the condition on numpy array
+array[array > 10]
