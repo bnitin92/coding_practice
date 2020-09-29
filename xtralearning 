@@ -1,0 +1,69 @@
+
+# Techniques
+## Fast and Slow Pointers
+* fast pointers makes reaches the end of the list and slow in middle
+
+
+# Python
+### Finding maximum element in list
+max(listname)
+##
+
+### Do not name a variable and functionname same in python
+##
+
+### refer to class inside a class to access init function
+self.classname(elements)
+##
+
+### Sort and sorted
+Sort: listname.sort()
+Sorted: a= sorted(listname)  print a
+##
+
+* never modify the DS like list or dict while traversing through that
+
+### Delete from Dictionary
+del dictionary_name[key]
+##
+
+### get value from dictionary
+dictionaryname.get(key)
+##
+
+### Binary Search
+
+```
+from bisect import bisect_left
+bisect_left(array, value)
+
+OR
+
+def BinarySearch(a, x):
+    i = bisect_left(a, x)
+    if i != len(a) and a[i] == x:
+        return i
+    else:
+        return -1
+```
+
+##
+
+### trick of choosing between value and None
+curr.next = l1 or l2
+choose whatever is not none
+##
+
+## NUMPY
+
+### finding the minimum index of the numpy array
+argmin(array)
+##
+
+### applying the condition on numpy array
+array[array > 10]
+##
+
+## creating numpy array using range
+np.array(range(start, end))
+##

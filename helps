@@ -6,6 +6,10 @@ max(listname)
 ## refer to class inside a class to access init function
 self.classname(elements)
 
+## Sort and sorted
+Sort: listname.sort()
+Sorted: a= sorted(listname)  print a
+
 
 ## never modify the DS like list or dict while traversing through that
 
