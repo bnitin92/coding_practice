@@ -32,10 +32,12 @@ def sortList(head):
 # In place list sorting method
 """
 Apply 2 methods first divide into halves and merge the 2 linked lists
+Follow up: Can you sort the linked list in O(n logn) time and O(1) memory (i.e. constant space)?
 """
 
 def sortList(head):
 
+    # returns the sorted list
     def mergelist(l1, l2):
         dummy = curr = ListNode()
 
@@ -51,15 +53,21 @@ def sortList(head):
 
         return dummy.next
 
-    def middleval(head):
+    # returns middle value and its preceeding ones
+    def midlenode(head):
         fastp = slowp = head
 
         while fastp.next and fastp:
             fastp = fastp.next.next
             slowp = slowp.next
 
-        return slowp.val
+        return slowp
 
+    mid = midlenode(head)
+    left = head
+    right = mid
+
+    return mergelist(left, right)
 
 
 

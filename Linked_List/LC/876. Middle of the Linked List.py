@@ -30,5 +30,5 @@ def middleNode(self, head: ListNode) -> ListNode:
         count += 1
         fastp = fastp.next.next
 
-    return slowp.val
+    return slowp
 
