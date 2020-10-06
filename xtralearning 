@@ -3,6 +3,16 @@
 ## Fast and Slow Pointers
 * fast pointers makes reaches the end of the list and slow in middle
 
+##
+##
+
+
+
+
+
+
+
+
 
 # Python
 ### Finding maximum element in list
@@ -54,6 +64,59 @@ curr.next = l1 or l2
 choose whatever is not none
 ##
 
+
+### default dict
+
+The functionality of both dictionaries and defualtdict are almost same except for the fact that defualtdict never raises a KeyError. It provides a default value for the key that does not exists.
+
+
+```
+d = defaultdict(def_value) 
+d["a"] = 1
+d["b"] = 2
+  
+print(d["a"]) 
+print(d["b"]) 
+print(d["c"]) 
+
+```
+Output:
+
+1
+2
+Not Present
+##
+
+### iter()
+
+The iter() function creates an object which can be iterated one element at a time.
+
+```
+# list of vowels
+vowels = ['a', 'e', 'i', 'o', 'u']
+vowels_iter = iter(vowels)
+
+print(next(vowels_iter))    # 'a'
+print(next(vowels_iter))    # 'e'
+print(next(vowels_iter))    # 'i'
+print(next(vowels_iter))    # 'o'
+print(next(vowels_iter))    # 'u'
+```
+
+##
+
+### converting list to dict()
+
+zip()- he zip() function, by default, returns a list of merged tuples, but because we want a dictionary, we have used dict() to convert our tuples into a dictionary.
+```
+fruit_dictionary = dict(zip(fruits, prices))
+```
+
+##
+
+
+
+##
 ## NUMPY
 
 ### finding the minimum index of the numpy array
