@@ -114,7 +114,13 @@ fruit_dictionary = dict(zip(fruits, prices))
 
 ##
 
+### printing range of sets
+set(range(10))
+##
 
+### set operations
+list(set(range(n)) - set(j for i, j in edges))
+##
 
 ##
 ## NUMPY

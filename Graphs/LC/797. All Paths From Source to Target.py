@@ -34,21 +34,38 @@ def bfs(graph, node):
 
     return path
 
+# write code but wrong logic
 
+# def allPathsSourceTarget(graph):
+#     #graph = list_to_dict(graph)
+#     res = []
+#
+#     for node in graph[0]:
+#         path = bfs(graph, node)
+#         if len(graph)-1 in path:
+#             path.insert(0,0)
+#             res.append(path)
+#
+#     return res
+
+
+# Count by dfs with memo.
 def allPathsSourceTarget(graph):
-    #graph = list_to_dict(graph)
-    res = []
-
-    for node in graph[0]:
-        path = bfs(graph, node)
-        if len(graph)-1 in path:
-            path.insert(0,0)
+    def dfs(curr, path):
+        if curr == len(graph) - 1:
             res.append(path)
+        else:
+            for i in graph[curr]:
+                dfs(i, path + [i])
+
+    res = []
+    dfs(0, [0])
 
     return res
 
+
 #graph = [[1,2],[3],[3],[]]
-graph = [[4,3,1],[3,2,4],[3],[4],[]]
+graph = [[4,3,1],[3,2,4],[3],[4],[]] # this gives the wrong answer for the previous one
 # print(graph)
 # print(bfs(graph, 0))
 print(allPathsSourceTarget(graph))
