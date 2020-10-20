@@ -122,6 +122,22 @@ set(range(10))
 list(set(range(n)) - set(j for i, j in edges))
 ##
 
+### xrange()
+
+
+##
+
+### declaring a dictionary
+```
+graph = {i: [] for i in range(vertices)}
+```
+##
+
+
+
+
+
+
 ##
 ## NUMPY
 
